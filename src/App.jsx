@@ -1,13 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import DashboardPage from './pages/DashboardPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p1>This is a React App! </p1>
-      </header>
-    </div>
+    <Router basename='/ship-management'>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/dashboard' element={<DashboardPage />} />
+        <Route path='/login' element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 
