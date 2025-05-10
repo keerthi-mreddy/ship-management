@@ -4,3 +4,10 @@ export const validateLogin = (username, password) => {
     }
     return false;
 };
+
+export const validateRegister = (username, accountType, fullName, password) => {
+    if (!username || !accountType || !fullName || !password) {
+        return false;
+    }
+    return true;
+}
