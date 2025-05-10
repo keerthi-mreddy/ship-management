@@ -7,11 +7,16 @@ const HomePage = () => {
     const navigateLoginPage = () => {
         navigate('/login');
     }
+
+    const navigateRegisterPage = () => {
+        navigate('/register')
+    }
     
     return (
         <div className="HomePage">
             <h1> Welcome to HomePage</h1>
             <button onClick={navigateLoginPage}>Go to Login</button>
+            <button onClick={navigateRegisterPage}>Register</button>
         </div>
     )
 };
