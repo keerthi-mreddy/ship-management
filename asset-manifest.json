@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ship-mangement/static/css/main.f855e6bc.css",
+    "main.js": "/ship-mangement/static/js/main.0e4294b8.js",
+    "static/js/453.9c2b6904.chunk.js": "/ship-mangement/static/js/453.9c2b6904.chunk.js",
+    "static/media/logo.svg": "/ship-mangement/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ship-mangement/index.html",
+    "main.f855e6bc.css.map": "/ship-mangement/static/css/main.f855e6bc.css.map",
+    "main.0e4294b8.js.map": "/ship-mangement/static/js/main.0e4294b8.js.map",
+    "453.9c2b6904.chunk.js.map": "/ship-mangement/static/js/453.9c2b6904.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0e4294b8.js"
+  ]
+}
