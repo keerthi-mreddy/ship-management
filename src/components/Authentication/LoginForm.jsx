@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { validateLogin } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router";
 
-const initialState = { username: "", password: "" };
+const initialState = { username: "", accountType: "", password: "" };
 
 const LoginForm = () => {
 
     const navigate = useNavigate();
     const [loginFormData, setLoginFormData] = useState(initialState);
-    const { username, password } = loginFormData;
+    const { username, accountType, password } = loginFormData;
 
     const handleLoginFormInputChange = (e) => {
         const { name, value } = e.target;
@@ -35,6 +35,14 @@ const LoginForm = () => {
                     required
                     name="username"
                     value={username}
+                    onChange={handleLoginFormInputChange}
+                />
+                <input
+                    type="text"
+                    placeholder="account type"
+                    required
+                    name="accountType"
+                    value={accountType}
                     onChange={handleLoginFormInputChange}
                 />
                 <input
